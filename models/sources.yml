@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: prod
+    database: "{{ env_var('gcp_project_id') }}"
+    schema: prod
+    tables:
+      - name: raw_playlist_data
+        description: Raw Playlist data

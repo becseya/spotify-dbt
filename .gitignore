@@ -2,3 +2,4 @@ secrets
 .user.yml
 Pipfile
 logs
+target

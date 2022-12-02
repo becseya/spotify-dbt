@@ -1,1 +1,4 @@
 secrets
+.user.yml
+Pipfile
+logs

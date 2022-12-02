@@ -1,2 +1,2 @@
 select * 
-from `nl-data`.`prod`.`raw_playlist_data`
+from `nl-data`.`dev`.`raw_playlist_data`

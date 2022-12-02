@@ -7,3 +7,9 @@ sources:
     tables:
       - name: raw_playlist_data
         description: Raw Playlist data
+  - name: dev
+    database: "{{ env_var('gcp_project_id') }}"
+    schema: dev
+    tables:
+      - name: raw_playlist_data
+        description: Test Raw Playlist data

@@ -1,2 +1,2 @@
 select * 
-from {{ source('prod', 'raw_playlist_data') }}
+from {{ source(target.name, 'raw_playlist_data') }}

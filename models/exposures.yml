@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: top_songs_visualization
+    label: "Artists in the top 100 (Yearly)"
+    type: dashboard
+    maturity: low
+    url: https://datastudio.google.com/s/iHX9ALmvdKs
+    description: >
+      Looker Studio dashboard
+    
+    depends_on:
+      - ref('top_songs')
+
+    owner:
+      name: Your Name
+      email: your@email.com

@@ -3,3 +3,4 @@ secrets
 Pipfile
 logs
 target
+dbt_packeges

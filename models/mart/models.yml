@@ -1,5 +1,27 @@
 version: 2
 
 models:
-    - name: top_songs
-      description: "Spotify data"
+  - name: top_songs
+    description: "Spotify data"
+    columns:
+      - name: track_id
+        tests:
+          - not_null
+      - name: artist_id
+        tests:
+          - not_null
+      - name: playlist_name
+        tests:
+          - not_null
+      - name: preview_url
+      - name: popularity
+      - name: duration_ms
+      - name: artist_name
+      - name: added_at
+      - name: explicit
+      - name: album_release_date
+      - name: track_name
+
+    tests:
+      - dbt_expectations.expect_compound_columns_to_be_unique:
+          column_list: ["track_id", "playlist_name"]

@@ -7,7 +7,7 @@ dbt-bq:
       project: "{{ env_var('gcp_project_id') }}"
       dataset: dev
       threads: 4
-      keyfile: /secrets/sa_key
+      keyfile: /secret/SA_KEY
       timeout_seconds: 300
       priority: interactive
       retries: 1
@@ -17,7 +17,7 @@ dbt-bq:
       project: "{{ env_var('gcp_project_id') }}"
       dataset: prod
       threads: 4
-      keyfile: /secrets/sa_key
+      keyfile: /secret/SA_KEY
       timeout_seconds: 300
       priority: interactive
       retries: 1
